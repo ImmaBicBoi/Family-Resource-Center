@@ -1,0 +1,414 @@
+/* Configure the Page Layout of the Website *
+ * WARNING: DO NOT MODIFY THIS FILE         */
+
+/* Styles for overall body */
+	body
+	{
+		padding: 0;
+		margin: 0;
+		min-width: 320px;
+	}
+/**/
+
+/* Styles for header */
+	header
+	{
+		margin-top: 10px;
+	}
+
+	header .mainBanner
+	{
+		width: 100%;
+	}
+	header .subBanner
+	{
+		width: 60%;
+	}
+
+	header h1
+	{
+		display: none;
+	}
+	
+	/* Styles for logos */
+		header #leftLogo
+		{
+			width: 22%;
+			float: left;
+		}
+		header #leftLogo img
+		{
+			width: 100%;
+			height: auto;
+			padding: 0;
+			margin: 0;
+		}
+
+		header #rightLogo
+		{
+			position: absolute;
+			display: block;
+			width: 78%;
+			right: 0;
+			transform: translate(0, 15%);
+			text-align: center;
+		}
+	/**/
+/**/
+
+/* Styles for navigation area */
+	nav
+	{
+		margin: 10px auto;
+		width: 85%;
+		clear: both;
+	}
+	
+	.menuItem
+	{
+		display: block;
+		margin: 0;
+		padding: 10px 5px;
+		width: 100%;
+	}
+	.submenuItem
+	{
+		display: block;
+		margin: 0;
+		padding: 10px 5px;
+		width: 100%;
+	}
+
+	/* First level navigation */
+		nav ul
+		{
+			padding: 0;
+			position: relative;
+			height: 36px;
+			text-align: center;
+		}
+
+		nav ul li
+		{
+			display: inline-block;
+			vertical-align: bottom;
+			min-width: 12%;
+		}
+	/**/
+		
+	/* Second level navigation */
+		nav ul li:hover > ul
+		{
+			display: block;
+		}
+
+		nav ul ul
+		{
+			display: none;
+			list-style: none;
+			position: absolute; 
+			text-align: left;
+			z-index: 1000;
+		}
+
+		nav ul ul li
+		{
+			position: relative;
+			display: block !important;
+			width: 225px;
+		}
+	/**/
+/**/
+
+/* Styles for main page area */
+	#wrapper
+	{
+		width: 85%;
+		margin: 25px auto 25px auto;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+	}
+
+	#leftCol
+	{
+		margin-right: 330px;
+		padding: 15px;
+	}
+
+	#rightCol
+	{
+		width: 300px;
+		float: right;
+		padding: 15px;
+	}
+/**/
+
+/* Styles for social plugin area */
+	#social
+	{
+		width: 6%;
+		left: 5px;
+		position: absolute;
+		top: 60%;
+	}
+	#social a
+	{
+		text-decoration: none;
+	}
+
+	.socialIcon, #topBTN img
+	{
+		width: 80%;
+		height: auto;
+	}
+
+	#topBTN
+	{
+		width: 6%;
+		right: 0;
+		position: fixed;
+		bottom: 15px;
+		z-index: 2;
+	}
+	
+	#top
+	{
+		color: rgba(0,0,0,0);
+	}
+/**/
+
+/* Styles for main content area */
+	/* Styles for error messages */
+		.error
+		{
+			display: block;
+			text-align: center;
+			margin: 10px auto;
+		}
+	/**/
+	
+	/* Styles for floating areas */
+		.left
+		{
+			float: left;
+		}
+		
+		.right
+		{
+			float: right;
+		}
+	/**/
+	
+	/* Styles for photogallery */
+		.mySlides
+		{
+			width: 80%;
+			max-width: 700px;
+			height: 400px;
+			margin: auto;
+		}
+		.mySlides.long
+		{
+			width: 275px;
+			height: 400px;
+		}
+		.mySlides.wide
+		{
+			width: 480px;
+			height: 360px;
+		}
+
+		.galleries
+		{
+			text-align: center;
+		}
+
+		.imageLinks
+		{
+			width: 125px;
+			height: auto;
+		}
+		
+		.galleryNav
+		{
+			width: 40px;
+			height: auto;
+		}
+
+		figure
+		{
+			display: inline-block;
+			margin: 20px;
+		}
+	/**/
+
+	/* Styles for hours of operation in contact.html */
+		#hoursTable
+		{
+			width: 50%;
+			margin: 40px auto;
+		}
+	/**/
+	
+	/* Styles for contact form in contact.html */
+		#contactForm
+		{
+			display: block;
+			width: 90%;
+			margin: 50px auto 0 auto;
+		}
+		
+		#contactForm label
+		{
+			float: left;
+			width: 45%;
+			clear: left;
+			text-align: right;
+			margin-top: 10px;
+		}
+		
+		#contactForm input, #contactForm textarea
+		{
+			width: 40%;
+			margin-top: 10px;
+		}
+		
+		#contactForm #submit
+		{
+			width: 25%;
+			min-width: 90px;
+			height: 40px;
+			margin: 15px 0;
+		}
+	/**/
+	
+	/* Styles for calendar in calendar.html */
+		#calendarPlugin
+		{
+			width: 100%;
+		}
+	/**/
+		
+	/* Styles for reviews in about/testimonials.html */
+		.reviewContainer
+		{
+			overflow: hidden;
+		}
+
+		.reviewWide
+		{
+			padding: 15px;
+		}
+
+		.reviewThin
+		{
+			width: 43%;
+			height: 200px;
+			display: block;
+			margin: 30px 0;
+			padding: 15px;
+		}
+	/**/
+/**/
+
+/* Styles for right column */
+	.rightInfo
+	{
+		width: 270px;
+		margin: 20px auto;
+	}
+
+	#organizations
+	{
+		text-align: center;
+	}
+	#organizations ul
+	{
+		padding-left: 0;
+		list-style-position: inside;
+	}
+	#organizations li
+	{
+		list-style: none;
+		text-align: center;
+		padding: 5px;
+		margin: 10px 0;	
+	}
+	#organizations img
+	{
+		width: 200px;
+		height: auto;
+	}
+/**/
+
+/* Styles for footer */
+	footer
+	{
+		clear: both;
+		overflow: hidden;
+		z-index: 1;
+	}
+	
+	footer h4
+	{
+		margin: 0;
+	}
+	
+	footer img
+	{
+		padding: 0 10px 10px 10px;
+	}
+
+	footer ul
+	{
+		display: inline-block;
+		padding: 15px;
+	}
+
+	/* Left footer column */
+		footer #leftFoot
+		{
+			width: 30%;
+			float: left;
+		}
+	
+		footer #leftFoot-content
+		{
+			margin-top: 67px;
+		}
+	/**/
+	
+	/* Middle footer column */
+		footer #midFoot
+		{
+			width: 30%;
+			margin: 0 auto;
+		}
+		
+		footer #midFoot-content
+		{
+			margin-top: 35px;
+		}
+	/**/
+	
+	/* Right footer column */
+		footer #rightFoot
+		{
+			width: 30%;
+			float: right;
+		}
+		
+		footer #rightFoot-content
+		{
+			padding: 10px 0;
+		}
+	/**/
+/**/
+
+/* Style to allow browser compatability */
+	header, nav, main, footer
+	{
+		display: block;
+	}
+/**/

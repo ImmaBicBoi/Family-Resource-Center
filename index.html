@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		
+		<!-- Import all styles into page --> 
+		<link rel="stylesheet" href="media/css/MainLayout.css">
+		<link rel="stylesheet" href="media/css/MainStyle.css">
+		<link rel="stylesheet" href="media/css/mobile.css">
+		<link rel="stylesheet" href="media/css/HoverEffects/hover.css">	
+		
+		<!-- Set Background Image -->
+		<style>
+			body
+			{
+				background: url("media/images/background.jpg");
+				background-size: 100% auto;
+				background-attachment: fixed;
+			}
+		</style>
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<title>Family Resource Center</title>
+	</head>
+
+	<body>
+		<header>
+			<!-- Make all header objects/logos link to the home page -->
+			<a href="index.html" title="Return to Home">
+				<div id="leftLogo">
+					<img alt="Family Resource Center at Barnum/Waltersville" src="media/images/logo.png">
+				</div>
+				<div id="rightLogo">
+					<img class="mainBanner" alt="Family Resource Center" src="media/images/banner-main.png">
+						<br>
+					<img class="subBanner" alt="at Barnum/Waltersville" src="media/images/banner-sub.png">
+				</div>
+			</a>
+			<!-- For SEO purposes. Is hidden by default -->
+			<h1>Barnum/Waltersville Family Resource Center</h1>
+		</header>
+	
+		<!-- div to identify the "top of content" -->
+		<div id="top">Top</div>
+		
+		<!-- button to return to top of content -->
+		<div id="topBTN">
+			<a title="Return to Top" href="#top">
+				<img class="hvr-bounce-in" alt="Return to Top" src="media/images/icon-up-arrow.png">
+			</a>
+		</div>
+		
+		<!-- nav bar with menu items-->
+		<nav>
+			<ul>
+				<li class="hvr-underline-from-center">
+					<a class="menuItem" href="index.html" title="Home Page">Home</a>
+				</li><!--
+				--><li>
+					<span class="menuItem navHeader" title="About Us">About Us</span>
+					<ul>
+						<li class="hvr-bounce-to-right"><a class="submenuItem" href="about/team.html" title="Our Team">Our Team</a></li>
+						<li class="hvr-bounce-to-right"><a class="submenuItem" href="about/testimonials.html" title="Testimonials">Testimonials</a></li>
+					</ul>
+				</li><!--
+				--><li class="hvr-underline-from-center">
+					<a class="menuItem" href="calendar.html" title="Calendar">Calendar</a>
+				</li><!--
+				--><li class="hvr-underline-from-center">
+					<a class="menuItem" href="photos.html" title="Photos">Photos</a>
+				</li><!--
+				--><li class="">
+					<span class="menuItem navHeader" title="Membership Documents">Membership</span>
+					<ul>
+						<li class="hvr-bounce-to-right"><a class="submenuItem" target="_blank" title="Membership Application" href="media/docs/Registration_Application.pdf">Membership Application</a></li>
+						<li class="hvr-bounce-to-right"><a class="submenuItem" target="_blank" title="Child Care Enrollment Form" href="media/docs/Child_Care_Enrollment_Form.pdf">Child Care Enrollment Form</a></li>
+					</ul>
+				</li><!--
+				--><li class="hvr-underline-from-center">
+					<a class="menuItem" href="contact.html" title="Contact Us">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<!-- left social icons -->
+		<div id="social">
+			<a href="https://www.facebook.com/BarnumandWaltersvilleFamilyResourceCenter/" target="_blank" title="Like us on Facebook!">
+				<img alt="Visit us on Facebook!" class="hvr-bubble-float-left socialIcon" src="media/images/icon-fb.png">
+			</a>
+				<br>
+			<a href="#" title="Follow us on Twitter!" target="_blank">
+				<img alt="Follow us on Twitter!" class="hvr-bubble-float-left socialIcon" src="media/images/icon-twitter.png">
+			</a>
+				<br>
+			<a href="#" title="Follow us on Instagram!" target="_blank">
+				<img alt="Follow us on Instagram!" class="hvr-bubble-float-left socialIcon" src="media/images/icon-insta.png">
+			</a>
+		</div>
+		
+		<!-- main webpage area -->
+		<div id="wrapper">						
+			<!-- right column -->
+			<div id="rightCol">
+				<aside>
+					<!-- Facebook feed area -->
+					<div class="rightInfo">
+						<iframe
+							src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBarnumandWaltersvilleFamilyResourceCenter%2F&tabs=timeline%2Cevents&width=270&height=450&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+							width="270"
+							height="450">
+							<span class="error">Sorry, there was an error loading the Facebook feed. Please login to Facebook to use this feature.</span>
+						</iframe>
+					</div>
+					
+					<!-- Partner organizations area -->
+					<div class="rightInfo" id="organizations">
+						<h2>Proud Friends of:</h2>
+						<ul>
+							<li class="hvr-radial-out">
+								<a target="_blank" title="A​CCESS Educational Services" href="http://www.accessfc.org/">
+									<img alt="A​CCESS Educational Services" src="media/images/orgs/access.jpg">
+										<br>
+									<h3>A​CCESS Educational Services</h3>
+								</a>
+							</li>
+							<li class="hvr-radial-out">
+								<a target="_blank" title="Alpha Kappa Alpha Sorority" href="https://www.facebook.com/Alpha-Kappa-Alpha-Sorority-Inc-Theta-Tau-Omega-Chapter-273046738569/">
+									<img alt="Alpha Kappa Alpha Sorority" src="media/images/orgs/akas.png">
+										<br>
+									<h3>Alpha Kappa Alpha Sorority, Inc: Theta Tau Omega Chapter</h3>
+								</a>
+							</li>
+							<li class="hvr-radial-out">
+								<a target="_blank" title="Optimus School Based Health Center" href="http://optimushealthcare.org/opthc/">
+									<img alt="Optimus School Based Health Center" src="media/images/orgs/optimus.png">
+										<br>
+									<h3>Optimus School Based Health Center</h3>
+								</a>
+							</li>
+							<li class="hvr-radial-out">
+								<a target="_blank" title="Barnum Elementary School Parent Advisory Council" href="http://bridgeport.ct.schoolwebpages.com/education/school/school.php?sectionid=183">
+									<img alt="Barnum Elementary School Parent Advisory Council" src="media/images/orgs/barnum.png">
+										<br>
+									<h3>Barnum Elementary School Parent Advisory Council</h3>
+								</a>
+							</li>
+							<li class="hvr-radial-out">
+								<a target="_blank" title="Waltersville Elementary School Parent Advisory Council" href="http://bridgeport.ct.schoolwebpages.com/education/components/scrapbook/default.php?sectiondetailid=61388&">
+									<img alt="Waltersville Elementary School Parent Advisory Council" src="media/images/orgs/waltersville.jpg">
+										<br>
+									<h3>Waltersville Elementary School Parent Advisory Council</h3>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+			
+			<!-- main content area -->
+			<div id="leftCol">
+				<main>
+					<div id="welcome">
+						<img alt="Word Collage" src="media/images/home/handwords.png">
+					
+						<h2>Welcome to the Family Resource Center<br>at the Barnum &amp; Waltersville Schools!</h2>
+						<p>Our center offers a variety of services: Parents as Teachers, Adult Education, 
+						Family Support, Referral Services and MORE!</p>
+					</div>
+				
+					<div id="info">
+						<h2>Our Mission</h2>
+						<p>
+							The Connecticut Family Resource Center concept promotes comprehensive, integrated, community-based systems of family support and child development services located in public school buildings.
+						</p>
+						<p>
+							Family Resource Centers provide access, within a community, to a broad continuum of early childhood and family support services which foster the optimal development of children and families.
+						</p>
+						<p>
+							They offer parent education and training; family support; preschool and school-age child care; teen pregnancy prevention (positive youth development services); and family day-care provider training.
+						</p>
+						
+						<div style="text-align: center;">
+							<img class="topics" alt="Family" src="media/images/home/thanksgiving.jpg">
+							<img class="topics" alt="Yoga" src="media/images/home/Yoga.jpg">
+						</div>
+
+						<h2>Family Resource Centers Provide:</h2>
+						<ul>
+							<li>Quality Child Care</li>
+							<li>Physical Accessibility in public schools</li>
+							<li>Hours of operation consisten with family schedules</li>
+							<li>Family support and child care services adminitstered by school/community-based agencies collaborating with schools</li>
+						</ul>
+					
+						<div style="text-align: center;">
+							<img class="midpics" alt="Fire Safety" src="media/images/home/firesafety.jpg">
+							<img class="midpics" alt="Thanksgiving" src="media/images/home/thanksgiving2.jpg">
+							<img class="midpics" alt="Group Activities" src="media/images/home/tableproject.jpg">
+							<img class="midpics" alt="Breast Cancer Awareness" src="media/images/home/breastcancer.jpg">
+							<img class="midpics" alt="Puppet Show" src="media/images/home/puppetshow.jpg">
+						</div>
+						
+						<h2>Resources Offered</h2>	
+						
+						<div class="resource">
+							<h3>Introduction to Technology Classes</h3>	
+							<ul class="programs">
+								<li>Computer and Internet Access</li>
+								<li>Child Care—School Readiness</li>
+								<li>Pre-School Back Pack Take Home Program</li>
+								<li>Lending Library</li>
+								<li>Pre-School Literacy &amp; Computer Camps</li>
+							</ul>	
+						</div>
+						
+						<div class="resource">
+							<h3>Parents as Teachers Training</h3>
+							<ul class="programs">
+								<li>Parenting Workshops</li>
+								<li>Leadership in Education Parents Training</li>
+								<li>Nutrition Program</li>
+								<li>Advocacy &amp; Mental Health</li>
+							</ul>	
+						</div>
+						
+						<div class="resource">
+							<h3>Informal Child Care Providers Training</h3>
+							<ul class="programs">
+								<li>Resource Materials</li>
+								<li>CPR &amp; Child First Aid Certificate</li>
+								<li>Assistance with State Licensing</li>
+							</ul>
+						</div>
+						
+						<div class="resource">
+							<h3>Math &amp; Book Clubs</h3>
+							<ul class="programs">
+								<li>School Age School Recess &amp; Summer Program</li>
+								<li>Educational Field Trips</li>
+							</ul>
+						</div>
+						
+						<div class="resource">
+							<h3>Information &amp; Referrals</h3>
+							<ul class="programs">
+								<li>Community Resources on Site Presentations</li>
+								<li>Emergency Food Pantry</li>
+								<li>Transportation Assistance to FRC Activities</li>
+							</ul>	
+						</div>		
+					</div>
+				</main>
+			</div>
+		</div>
+			
+		<!-- footer area -->
+		<footer>
+			<!-- left column of footer -->
+			<div id="leftFoot">
+				<div id="leftFoot-content">
+					Family Resource Center
+						<br>
+					<i>at Barnum/Waltersville Schools</i>
+						<br>
+					495 Waterview Avenue, Bridgeport, CT 06608
+						<br>
+					Room 322
+						<br>
+					(203) 275-2371
+				</div>
+			</div>
+			
+			<!-- right column of footer -->
+			<div id="rightFoot">
+				<div id="rightFoot-content">
+					<span style="display:block;">Our Site:</span>
+					<ul>
+						<li><a href="index.html" title="Home Page">Home</a></li>
+						<li><a href="about/team.html" title="Our Team">Our Team</a></li>
+						<li><a href="about/testimonials.html" title="Testimonials">Testimonials</a></li>
+						<li><a href="calendar.html" title="Calendar">Calendar</a></li>
+						<li><a href="photos.html" title="Photos">Photos</a></li>
+						<li><a target="_blank" title="Membership Application" href="media/docs/Registration_Application.pdf">Membership Application</a></li>
+						<li><a target="_blank" title="Child Care Enrollment Form" href="media/docs/Child_Care_Enrollment_Form.pdf">Child Care Enrollment Form</a></li>
+						<li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- middle column of footer -->
+			<div id="midFoot">
+				<div id="midFoot-content">
+					<a href="index.html">
+						<img alt="Family Resource Center at Barnum/Waltersville" src="media/images/logo.png">
+					</a>
+					<a target="_blank" href="http://www.bridgeportct.gov/">
+						<img alt="City of Bridgeport Department of Education" src="media/images/BridgeportDOE.png">
+					</a>
+						<br>
+					&copy; 2016 Family Resource Center at Barnum/Waltersville
+						<br>
+					Page Last Updated: 12/05/2016
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

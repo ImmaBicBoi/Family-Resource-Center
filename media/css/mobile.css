@@ -1,0 +1,231 @@
+@media screen and (max-width: 980px)
+{
+	/* Mobile styles for overall body */
+		body
+		{
+			background-image: none !important;
+		}
+	/**/
+		
+	/* Mobile styles for header */	
+		header
+		{
+			overflow: hidden !important;
+			background-color: #F3E9DC;
+			margin: 0;
+			padding-bottom: 20px;
+		}
+		
+		/* Mobile styles for logos */
+			header #leftLogo
+			{
+				display: none;
+			}
+		
+			header #rightLogo
+			{
+				position: static;
+				display: block;
+				width: 100%;
+			}
+			
+			header #rightLogo img
+			{
+				height: auto !important;
+			}
+		/**/
+	/**/
+		
+	/* Mobile styles for navigation area */	
+		nav
+		{
+			border-top: 2px solid #000000;
+			border-bottom: 2px solid #000000;
+			width: 100%;
+		}
+	
+		.menuItem, .submenuItem
+		{
+			font-size: 1.25em;
+			background-color: #E29BCC;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.menuItem:hover, .submenuItem:hover
+		{
+			color: #79C2DB !important;
+			text-shadow:
+   				-1px -1px 0 #000000,  
+    			1px -1px 0 #000000,
+    			-1px 1px 0 #000000,
+     			1px 1px 0 #000000;
+     		letter-spacing: 1px;
+		}
+		
+		/* Mobile styles for first level nagivation */
+			nav, nav ul
+			{
+				display: block;
+				width: 100% !important;
+				position: static;
+				height: auto;
+				margin: 0;
+			}
+
+			nav ul li
+			{
+				display: block;
+				width: 100%;
+				height: auto;
+		
+				border-right: none;
+				border-bottom: 2px solid #000000;
+				border-radius: 0 !important;
+			}
+
+			nav ul li:last-child
+			{
+				border: none;
+			}
+
+			nav ul li .navHeader
+			{
+				display: none;
+			}
+		/**/
+		
+		/* Mobile styles for second level navigation */
+			nav ul ul
+			{
+				display: block;
+				position: static;
+				width: 100%;
+			}
+
+			nav ul ul li
+			{
+				border-bottom: 2px solid black;
+				position: static;
+				width: 100%;
+				text-align: center;
+			}
+		/**/
+	/**/
+	
+	/* Mobile styles for main page area */
+		#top
+		{
+			height: 0;
+		}
+
+		#wrapper
+		{
+			width: 100%;
+			border-radius: 0;
+			margin: 0;
+			box-shadow: none;
+		}
+
+		#leftCol
+		{
+			margin-right: 0;
+		}
+
+		#rightCol
+		{
+			display: none;
+		}
+	/**/
+		
+	/* Mobile styles for social plugin area */	
+		#social
+		{
+			display: none;
+		}
+
+		#topBTN
+		{
+			display: none;
+		}
+	/**/
+	
+	/* Mobile styles for main content area */
+		main img
+		{
+			display: none;
+		}
+		
+		/* Mobile styles for contact page */
+			#contactForm #submit
+			{
+				width: 50%;
+			}
+		/**/
+			
+		/* Mobile styles for photogalleries */
+			figcaption
+			{
+				padding: 10px;
+			}
+			
+			.mySlides
+			{
+				width: 95%;
+			}
+	
+			.galleryNav
+			{
+				display: block;
+			}
+		/**/
+			
+		/* Mobile styles for reviews */
+			.reviewThin, .reviewWide
+			{
+				width: 80%;
+				height: auto;
+				float: none;
+				margin: 25px auto;
+			}
+		/**/
+	/**/
+	
+	/* Mobile styles for footer */
+		/* Mobile styles for left footer column */
+			footer #leftFoot
+			{
+				float: none;
+				width: 100%;
+			}
+
+			footer #leftFoot-content
+			{
+				margin-top: 10px;
+			}
+		/**/
+
+		/* Mobile styles for middle footer column */
+			footer #midFoot
+			{
+				width: 100%;
+			}
+
+			footer #midFoot-content
+			{
+				margin: 10px 0;		
+			}
+
+			footer #midFoot img
+			{
+				display: none;
+			}
+		/**/
+			
+		/* Mobile styles for right footer column */
+			footer #rightFoot
+			{
+				display: none;
+			}
+		/**/
+	/**/
+}

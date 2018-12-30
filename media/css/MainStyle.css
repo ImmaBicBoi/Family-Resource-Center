@@ -1,0 +1,440 @@
+/* Configure the Styles of the Website *
+
+/* Styles for overall body */
+	body
+	{
+		font-family:"Arial Narrow", Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 13pt;
+	}
+/**/
+
+/* Styles for header */
+	header
+	{
+		overflow: auto;
+	}
+/**/
+
+/* Styles for navigation area */
+	.menuItem
+	{
+		font-size: 1.4em;
+		text-decoration:none;
+		color: #F3E9DC;
+	}
+	.submenuItem
+	{
+		font-size: 1.1em;
+		text-decoration:none;
+		color: #F3E9DC;
+	}
+
+	/* First level navigation */
+		nav ul li
+		{	
+			background-color: #79C2DB;
+			border-right: 2px solid #000000;
+			cursor: pointer;
+		}	
+		nav ul li:hover
+		{
+			background-color: #F3E9DC;
+		}
+	
+		nav ul li:hover > .menuItem
+		{
+			color: black;
+		}
+
+		nav ul > li:first-child
+		{
+			/* Border Radius Properties */
+			-moz-border-top-left-radius: 10px;
+			-moz-border-bottom-left-radius: 10px;
+			-webkit-border-top-left-radius: 10px;
+			-webkit-border-bottom-left-radius: 10px;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+		nav ul > li:last-child
+		{
+			border-right: none;
+	
+			/* Border Radius Properties */
+			-moz-border-top-right-radius: 10px;
+			-moz-border-bottom-right-radius: 10px;
+			-webkit-border-top-right-radius: 10px;
+			-webkit-border-bottom-right-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+	/**/
+		
+	/* Second level navigation */
+		nav ul ul li
+		{
+			border-radius: 0 !important;
+			border-right: none !important;
+			border-bottom: 2px solid black;
+		}
+		nav ul ul > li:hover
+		{
+			background-color: #79C2DB !important;
+		}
+
+		nav ul ul li:last-child
+		{
+			border-bottom: none;
+		}
+	/**/
+/**/
+
+/* Styles for main page area */
+	#wrapper
+	{
+		border-radius: 10px;
+		box-shadow: 0 0 10px black;
+		background-color: #F3E9DC;
+	}
+
+	#rightCol
+	{
+		background-color: #E29BCC;
+	}
+/**/
+
+/* Styles for main content area */
+	.borderBottom
+	{
+		border-bottom: 1px solid black;
+	}
+	
+	.error
+	{
+		color: red;
+		font-size: 1.3em;
+		font-weight: bold;
+		font-style: italic;
+	}
+	
+	/* Styles for content headings */
+		h2, h3, h4, h5, h6
+		{
+			text-transform: uppercase;
+		}
+
+		main h2
+		{
+			text-align: center;	
+			font-size: 1.25em;
+		}
+		
+		main h4
+		{
+			border-bottom: 2px solid #9FD356;
+			display: inline;
+		}
+	/**/
+
+	/* Styles for main content area of index.html */
+		#welcome
+		{
+			padding: 10px;
+			text-align: center;
+		}
+
+		#welcome p
+		{
+			font-size: .9em;
+			font-style: italic;
+			transform: translate(0,75%);
+		}
+		
+		#welcome img
+		{
+			height: 200px;
+			width: auto;
+			float: left;
+			padding: 10px;
+		}
+
+		#info
+		{
+			clear: left;
+			text-align: left;
+			padding: 20px;
+		}
+
+		#info p
+		{
+			text-align: justify;
+			text-indent: 20px;
+		}
+		
+		.topics
+		{
+			width: 30%;
+			height: auto;
+			padding: 0 5px;
+		}
+
+		.midpics
+		{
+			width: 15%;
+			height: auto;
+			padding: 0 5px;
+		}
+
+		.resource
+		{
+			width: 70%;
+			margin: 20px auto;
+			padding: 10px;
+			background-color: #79C2DB;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			box-shadow: 0 0 4px 2px #E29BCC;
+		}
+
+		.resource h3
+		{
+			text-align: center;
+		}
+	/**/
+		
+	/* Styles for main content area in about/team.html */
+		.taskForce
+		{
+			padding: 12.5px 25px;
+		}
+	
+		.taskForce .name
+		{
+			display: block;
+			font-weight: bold;
+			font-size: 1.2em;
+			text-align: center;
+			color: #E29BCC;
+		}
+	
+		.taskForce .position
+		{
+			display: block; 
+			font-weight: bold;
+			font-size: 1em;
+			font-style: italic;
+			text-align: center;
+			color: #E29BCC;
+		}
+	
+		.taskForce p
+		{
+			text-align: justify;
+			text-indent: 30px;
+			line-height: 150%;
+			font-size: 1.1em;
+		}
+	
+		.taskForce img
+		{
+			display: block;
+			margin: 0 auto 20px auto;
+			width: 200px;
+			height: 200px;
+			box-shadow: 0 0 0 4px #E29BCC;
+		
+			/*For Border Radius*/
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+		}
+	/**/
+	
+	/* Styles for main content area in about/testimonials.html */
+		.reviewWide
+		{
+			border: 5px dotted #E29BCC;
+			text-align: center;
+		}
+
+		.reviewThin
+		{
+			border: 2px dashed #79C2DB;
+			text-align: justify;
+			text-indent: 30px;
+		}
+	/**/
+	
+	/* Styles for slideshow objects */
+		.mySlides
+		{
+			border: 3px solid #E29BCC;
+		}
+
+		figure
+		{
+			border: 2px solid #E29BCC;
+		}
+
+		figure figcaption
+		{
+			text-align: center;
+		}
+
+		figure a
+		{
+			text-decoration: none;
+		}
+		
+		.galleryNav
+		{
+			cursor: pointer;
+		}
+	/**/
+
+	/* Styles for main content area in contact.html */
+		.title
+		{
+			font-size: 2em;
+			font-weight: bold;
+		}
+		
+		.subtitle
+		{
+			font-size: 1.5em;
+			font-style: italic;
+		}
+		
+		#address
+		{
+			text-align: center;
+			font-size: 1.25em;
+		}
+
+		#contactForm
+		{
+			border: 2px dashed #E29BCC;
+		}
+		
+		#contactForm #submit
+		{
+			cursor: pointer;
+			background-color: #E29BCC;
+			color: #F3E9DC;
+			font-size: .75em;
+		}
+		#contactForm #submit:hover
+		{
+			background-color: #79C2DB;
+		}
+			
+		#map
+		{
+			width: 75%;
+			margin: 25px auto;
+			height: 400px;
+			text-align: center;
+			border: 4px solid #E29BCC;
+		}
+
+		#hoursTable
+		{
+			border-collapse: collapse;
+			border: 5px solid #E29BCC;
+		}
+
+		#hoursTable caption
+		{
+			font-style: italic;
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+		
+		#hoursTable th, tr, td
+		{
+			padding: 5px;
+		}
+
+		#hoursTable th
+		{
+			background-color: #E29BCC;
+		}
+
+		#hoursTable tr
+		{
+			border: 2px solid #E29BCC;
+		}
+
+		#hoursTable td
+		{
+			background-color: #79C2DB;
+		}
+
+		#hoursTable td:first-of-type
+		{
+			border-right: 2px solid #E29BCC;
+		}
+	/**/	
+/**/
+
+/* Styles for right column */
+	#organizations li
+	{
+		background-color: #79C2DB;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+
+	#organizations a
+	{
+		text-decoration: none;
+		color: black;
+	}
+/**/
+
+/* Styles for footer */
+	footer
+	{
+		background-color: black;	
+		color: #F3E9DC;
+		text-align: center;
+	}
+	
+	footer ul
+	{
+		list-style: none;
+		text-align: left;
+		border: 2px dashed #F3E9DC;
+	}
+
+	footer a
+	{
+		color: #F3E9DC;
+		text-decoration: none;
+	}
+	
+	footer img
+	{
+		width: 30%;
+		height: auto;
+	}
+	
+	/* Left footer column */
+		footer #leftFoot
+		{
+			font-size: 1.1em;
+			line-height: 150%;
+		}
+	/**/
+
+	/* Right footer column */
+		footer #rightFoot-content a:hover
+		{
+			text-decoration: underline;
+			color: #E29BCC;
+		}
+	/**/
+/**/
